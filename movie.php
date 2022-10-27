@@ -37,9 +37,16 @@ $dataMovie = $model->dataMovie();
                                     <td><?= $row['kat'] ?></td>
                                     <td><?= $row['tanggal_rilis'] ?></td>
                                     <td><?= $row['sinopsis'] ?></td>
-                                    <td><?= $row['cover'] ?></td>
+                                    <td class="product-thumb">
+                                        <img width="80px" height="auto" src="images/movies/<?= $row['cover']; ?>.jpg" alt="image description">
+                                    </td>
                                     <td>
                                         <form action="movieController.php" method="POST">
+                                            <a href="index.php?hal=movieDetail&id=<?= $row['id'] ?>">
+                                                <button type="button" class="btn btn-info btn-sm" title="Movie Details">
+                                                    <i class="fa fa-eye"></i>
+                                                </button>
+                                            </a>
                                             <a href="index.php?hal=movieEdit&idedit=<?= $row['id'] ?>">
                                                 <button type="button" class="btn btn-warning btn-sm" title="Edit Category">
                                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
