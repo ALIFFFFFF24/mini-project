@@ -43,6 +43,7 @@ $mov = !empty($idedit) ? $objMovie->getMovie($idedit) : array();
                         <div class="checkbox d-inline-flex">
                             <button type="submit" class="btn btn-danger" name="proses" value="edit" onclick="return confirm('Edit Data ?')">Edit</button>
                             <input type="hidden" name="idx" value="<?= $idedit ?>">
+                        </div>
             </fieldset>
         </form>
     </div>

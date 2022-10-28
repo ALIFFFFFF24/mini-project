@@ -32,7 +32,7 @@ class Movie
         $sql = "SELECT f.id,f.judul,k.nama as kat,f.tanggal_rilis,f.sinopsis,f.cover
         FROM film f INNER JOIN kategori k ON f.kategori_id = k.id WHERE f.data = ?";
         $ps = $this->koneksi->prepare($sql);
-        $ps->execute([$id]);
+        $ps->execute([$data]);
         $rs = $ps->fetch();
         return $rs;
     }

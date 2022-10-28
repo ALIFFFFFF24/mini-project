@@ -10,6 +10,8 @@ include_once("models/Kategori.php");
 include_once("models/Movie.php");
 include_once("models/Studio.php");
 include_once("models/Kursi.php");
+include_once("models/Jadwal.php");
+include_once("models/Pemesanan.php");
 echo '<br/';
 $hal = $_REQUEST['hal'];
 if (!empty($hal)) {

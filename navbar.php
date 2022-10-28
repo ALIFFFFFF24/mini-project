@@ -25,22 +25,14 @@
                                     <li><a class="dropdown-item " href="index.php?hal=kategori">Film Categories</a></li>
                                     <li><a class="dropdown-item " href="index.php?hal=studio">Studios</a></li>
                                     <li><a class="dropdown-item " href="index.php?hal=kursi">Seats</a></li>
+                                    <li><a class="dropdown-item " href="index.php?hal=jadwal">Movies Schedule</a></li>
+                                    <li><a class="dropdown-item " href="index.php?hal=masterPemesanan">Movies Booking</a></li>
+
                                 </ul>
 
                             </li>
-                            <li class="nav-item dropdown dropdown-slide">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#!">Booking<span><i class="fa fa-angle-down"></i></span>
-                                </a>
-
-                                <!-- Dropdown list -->
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item " href="index.php?hal=user">User</a></li>
-                                    <li><a class="dropdown-item " href="index.php?hal=movie">Movies</a></li>
-                                    <li><a class="dropdown-item " href="index.php?hal=kategori">Film Categories</a></li>
-                                    <li><a class="dropdown-item " href="index.php?hal=studio">Studios</a></li>
-                                    <li><a class="dropdown-item " href="index.php?hal=kursi">Seats</a></li>
-                                </ul>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?hal=pemesanan">Buy Ticket</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mt-10">
