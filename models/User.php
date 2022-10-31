@@ -26,8 +26,16 @@ class User
     }
     public function simpan($data)
     {
-        $sql = "INSERT INTO user (nama, email,no_hp, password) VALUES (?,?,?,?)";
+        $sql = "INSERT INTO user (nama, username, email, no_hp, password,role) VALUES (?,?,?,?,?,?)";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute($data);
+    }
+    public function cekLogin($data)
+    {
+        $sql = "SELECT * FROM user WHERE username = ? AND password = ?";
+        $ps = $this->koneksi->prepare($sql);
+        $ps->execute($data);
+        $rs = $ps->fetch();
+        return $rs;
     }
 }

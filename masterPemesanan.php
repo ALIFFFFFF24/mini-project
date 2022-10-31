@@ -13,13 +13,13 @@ $dataPemesanan = $model->dataPemesanan();
                     <table class="table">
                         <thead>
                             <tr class="text-center">
-                                <th class="">No.</th>
-                                <th class="">Booking Id</th>
-                                <th class="">User Name</th>
-                                <th class="">Seat Number</th>
-                                <th class="">Movie Title</th>
-                                <th class="">Studio</th>
-                                <th class="">Date</th>
+                                <th>No.</th>
+                                <th>Booking Id</th>
+                                <th>Name</th>
+                                <th>Seat Number</th>
+                                <th>Movie Title</th>
+                                <th>Studio</th>
+                                <th>Date</th>
                             </tr>
                         </thead>
                         <tbody>

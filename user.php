@@ -1,7 +1,8 @@
 <?php
-$model = new Kategori();
+$model = new User();
 
-$dataKategori = $model->dataKategori();
+$dataUser = $model->dataUser();
+
 ?>
 <section class="dashboard section">
 
@@ -11,25 +12,35 @@ $dataKategori = $model->dataKategori();
         <div class="row">
             <div class="col">
                 <div class="widget dashboard-container my-adslist">
-                    <h3 class="widget-header">Movie Categories</h3>
                     <table class="table">
                         <thead>
                             <tr class="text-center">
-                                <th class="">No.</th>
-                                <th class="">Category Id</th>
-                                <th class="">Category Title</th>
-                                <th class="">Action</th>
+                                <th>No.</th>
+                                <th>Id</th>
+                                <th>Full Name</th>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Password</th>
+                                <th>Role</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
                             $no = 1;
-                            foreach ($dataKategori as $row) {
+                            foreach ($dataUser as $row) {
                             ?>
                                 <tr class="text-center">
                                     <td scope="row"><?= $no ?></td>
                                     <td><?= $row['id'] ?></td>
                                     <td><?= $row['nama'] ?></td>
+                                    <td><?= $row['username'] ?></td>
+                                    <td><?= $row['email'] ?></td>
+                                    <td><?= $row['no_hp'] ?></td>
+                                    <td><?= $row['password'] ?></td>
+                                    <td><?= $row['role'] ?></td>
+
                                     <td>
                                         <form action="kategoriController.php" method="POST">
                                             <a href="index.php?hal=kategoriEdit&idedit=<?= $row['id'] ?>">

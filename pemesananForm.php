@@ -1,4 +1,5 @@
 <?php
+$sesi = $_SESSION['user'];
 $objJadwal = new Jadwal();
 $objMovie = new Movie();
 $objStudio = new Studio();
@@ -14,6 +15,7 @@ $jad = !empty($idJadwal) ? $objJadwal->getJadwal($idJadwal) : array();
 <section class="advt-post bg-gray py-5">
     <div class="container">
         <form action="pemesananController.php" method="POST">
+            <input type="hidden" name="jadwal_id" value="<?= $idJadwal = $_REQUEST['idjadwal']; ?>">
             <!-- Post Your ad start -->
             <fieldset class="border border-gary px-3 px-md-4 py-4 mb-5">
                 <div class="row">
@@ -24,7 +26,7 @@ $jad = !empty($idJadwal) ? $objJadwal->getJadwal($idJadwal) : array();
                 <div class="row">
                     <div class="col">
                         <h6 class="font-weight-bold pt-4 pb-1">User :</h6>
-                        <input type="text" name="user_id" class="form-control bg-white" required>
+                        <input type="text" name="user_id" value="<?= $sesi['nama']; ?>" class="form-control bg-white" required>
                     </div>
                 </div>
                 <div class="row">

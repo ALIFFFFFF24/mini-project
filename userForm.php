@@ -3,7 +3,7 @@
         <div class="col-lg-5 col-md-8 align-item-center">
             <div class="border border">
                 <h3 class="bg-gray p-4">Register Now</h3>
-                <form action="userController.php" method="POST">
+                <form action="userController.php" method="POST" autocomplete="off">
                     <fieldset class="p-4">
                         <input class="form-control mb-3" id="nama" type="text" name="nama" placeholder="Name*" required>
                         <input class="form-control mb-3" id="email" type="email" name="email" placeholder="Email*" required>

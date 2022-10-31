@@ -35,10 +35,10 @@ $dataJadwal = $model->dataJadwal();
                                         <form action="pemesananController.php" method="POST">
                                             <a href="index.php?hal=pemesananForm&idjadwal=<?= $row['id'] ?>">
                                                 <button type="button" class="btn btn-success btn-sm" title="Buy Ticket">
-                                                    <i class="fa fa fa-money" aria-hidden="true"></i>Buy Ticket
+                                                    <i class="fa fa fa-money" aria-hidden="true"></i>&nbsp; Buy Ticket
                                                 </button>
                                             </a>
-                                            <input type="hidden" name="idx" value="<?= $row['id'] ?>">
+
 
                                         </form>
                                     </td>

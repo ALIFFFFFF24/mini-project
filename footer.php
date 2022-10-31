@@ -10,7 +10,7 @@
                 <!-- About -->
                 <div class="block about">
                     <!-- footer logo -->
-                    <img src="images/logo-footer.png" alt="logo">
+                    <img class="w-50" src="images/logo.png" alt="logo">
                     <!-- description -->
                     <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -19,33 +19,11 @@
             </div>
             <!-- Link list -->
             <div class="col-lg-2 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
-                <div class="block">
-                    <h4>Site Pages</h4>
-                    <ul>
-                        <li><a href="dashboard-my-ads.html">My Ads</a></li>
-                        <li><a href="dashboard-favourite-ads.html">Favourite Ads</a></li>
-                        <li><a href="dashboard-archived-ads.html">Archived Ads</a></li>
-                        <li><a href="dashboard-pending-ads.html">Pending Ads</a></li>
-                        <li><a href="terms-condition.html">Terms & Conditions</a></li>
-                    </ul>
-                </div>
+
             </div>
             <!-- Link list -->
             <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0 col-6 mb-4 mb-md-0">
-                <div class="block">
-                    <h4>Admin Pages</h4>
-                    <ul>
-                        <li><a href="category.html">Category</a></li>
-                        <li><a href="single.html">Single Page</a></li>
-                        <li><a href="store.html">Store Single</a></li>
-                        <li><a href="single-blog.html">Single Post</a>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
 
-
-
-                    </ul>
-                </div>
             </div>
             <!-- Promotion -->
             <div class="col-lg-4 col-md-7">
@@ -56,7 +34,7 @@
                             <!-- Icon -->
                             <img src="images/footer/phone-icon.png" alt="mobile-icon">
                         </a>
-                        <p class="mb-0">Get the Dealsy Mobile App and Save more</p>
+                        <p class="mb-0">Get the MTix Mobile App</p>
                     </div>
                     <div class="download-btn d-flex my-3">
                         <a href="index.html"><img src="images/apps/google-play-store.png" class="img-fluid" alt=""></a>
@@ -79,7 +57,8 @@
                     <p>Copyright &copy; <script>
                             var CurrentYear = new Date().getFullYear()
                             document.write(CurrentYear)
-                        </script>. Designed & Developed by <a class="text-white" href="https://themefisher.com">Themefisher</a></p>
+                        </script>. Developed by <a class="text-white" href="https://github.com/ALIFFFFFF24">Alif Firdiansyah</a></p>
+
                 </div>
             </div>
             <div class="col-lg-6">

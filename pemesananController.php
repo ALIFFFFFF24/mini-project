@@ -1,13 +1,18 @@
 <?php
+session_start();
 include_once 'koneksi.php';
 include_once 'models/Pemesanan.php';
-$user_id = $_POST['user_id'];
+$sesi = $_SESSION['user'];
+$jadwal_id = $_POST['jadwal_id'];
+$user_id = $sesi['id'];
 $kursi_id = $_POST['kursi_id'];
 $film_id = $_POST['film_id'];
 $studio_id = $_POST['studio_id'];
 $tanggal = $_POST['tanggal'];
 $total_harga = 35000;
+
 $data = [
+    $jadwal_id,
     $user_id,
     $kursi_id,
     $film_id,
